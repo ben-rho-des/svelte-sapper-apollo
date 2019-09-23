@@ -21,14 +21,15 @@
 		--some-var: blue;
 	}
 
-
 	button {
 		color: white;
 		padding: 10px;
 		border-radius: 10px;
-		//background: var(--some-var);
-		background: var(--other-var);
+		background: var(--some-var);
+		//background: var(--other-var);
 	}
 </style>
 
-<button>{text}</button>
+<button type="button">
+	<slot>[no content was provided]</slot>
+</button>

@@ -10,8 +10,6 @@
 
 <p>This is the 'test' page. There's not much here.</p>
 
-<Button />
+<Button/>
 
-<Button text="hello" />
-
-<Button text="hello2" />
+<Button>Hello</Button>

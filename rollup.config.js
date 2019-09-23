@@ -22,7 +22,7 @@ const preprocessOptions = {
             plugins: [
 				require("postcss-import")(),
 				require("postcss-url")(),
-				require("autoprefixer")({ browsers: "last 4 version" }),
+				require("autoprefixer")({ browsers: "last 2 version" }),
 				require("postcss-color-mod-function")(),
 				require("cssnano")(),
 				require('postcss-css-variables')({variables: theme})
