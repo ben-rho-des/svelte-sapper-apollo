@@ -1,6 +1,4 @@
-<style>
-	@import "../global.css";
-
+<style>	
 	h1, figure, p {
 		text-align: center;
 		margin: 0 auto;
@@ -11,6 +9,7 @@
 		text-transform: uppercase;
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
+		color: var(--some-var);
 	}
 
 	figure {

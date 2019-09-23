@@ -7,7 +7,7 @@ import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 
-import postcss from  "rollup-plugin-postcss";
+import theme from './src/theme';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -25,7 +25,7 @@ const preprocessOptions = {
 				require("autoprefixer")({ browsers: "last 4 version" }),
 				require("postcss-color-mod-function")(),
 				require("cssnano")(),
-				require('postcss-css-variables')()
+				require('postcss-css-variables')({variables: theme})
 			]
         }
     }

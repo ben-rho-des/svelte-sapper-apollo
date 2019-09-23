@@ -15,10 +15,19 @@
 		background: color-mod(yellow blend(red 50%));
 	}
 
+	/* overwrite theme */
+	
+	:root {
+		--some-var: blue;
+	}
+
+
 	button {
 		color: white;
 		padding: 10px;
 		border-radius: 10px;
+		//background: var(--some-var);
+		background: var(--other-var);
 	}
 </style>
 
