@@ -1,4 +1,6 @@
 <style>
+	@import "../global.css";
+
 	h1, figure, p {
 		text-align: center;
 		margin: 0 auto;
@@ -10,10 +12,6 @@
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
 	}
-
-	h1 {
-    	color: var(--header-color);
-  	}
 
 	figure {
 		margin: 0 0 1em 0;
