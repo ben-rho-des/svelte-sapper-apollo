@@ -3,9 +3,20 @@
 </script>
 
 <style>
+	/* cssnano will pack the below three in one selector */
+
+	/* autoprefix */
+	button {
+		display: flex;
+	}
+
+	/* color mod func */
+	button {
+		background: color-mod(yellow blend(red 50%));
+	}
+
 	button {
 		color: white;
-		background: green;
 		padding: 10px;
 		border-radius: 10px;
 	}
