@@ -46,7 +46,26 @@ const HEADER_NAME = 'authorization';
 
 const server = new ApolloServer({ 
   typeDefs,
-  resolvers
+  resolvers,
+  context: async ({ req }) => {
+    let authToken = null;
+    let currentUser = null;
+
+     try {
+        authToken = req.headers[HEADER_NAME];
+        console.log(authToken)
+        // if (authToken) {
+        //      currentUser = await tradeTokenForUser(authToken);
+        // }
+     } catch (e) {
+        console.warn(`Unable to authenticate using auth token: ${authToken}`);
+     }
+
+    return {
+        authToken,
+        currentUser,
+    };
+ },
 });
 
 server.listen().then(({ url }) => {
