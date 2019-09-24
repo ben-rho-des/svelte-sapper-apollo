@@ -8,17 +8,19 @@
     "cy:run": "cypress run",
     "dev": "sapper dev",
     "export": "sapper export --legacy",
-    "server": "node server",
+    "server": "node apollo-server/server",
     "start": "node __sapper__/build",
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
     "apollo-client": "^2.6.3",
     "apollo-link": "^1.2.12",
+    "apollo-server": "^2.9.3",
     "compression": "^1.7.1",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
     "graphql": "^14.4.2",
     "node-fetch": "^2.6.0",
-    "polka": "next",
     "svelte-observable": "^v0.4.0",
     "zen-observable": "^v0.8.14"
   },
